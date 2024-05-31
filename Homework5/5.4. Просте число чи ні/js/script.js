@@ -9,8 +9,9 @@ if (Number(prom) != NaN && Number(prom) != null && Number(prom) > 0) {
       }
    }
    if (k > 2) {
-      console.log(`${number} - Не просте число`);
+      console.log(`${number} - Составне число`);
    } else console.log(`${number} - Просте число`);
-} else console.log("Uncorrect data")
-
-
+} else if (Number(prom) == 0 && prom != '' && prom != null) {
+   console.log(`${number} - Не просте та не составне число`);
+}
+else console.log("Uncorrect data")
