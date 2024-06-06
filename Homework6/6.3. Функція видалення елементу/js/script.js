@@ -11,4 +11,4 @@ function removeElement(arrayNumbers, item) {
    console.log(arrayNumbers)
 }
 
-removeElement(array, 6);
+removeElement(array, 4);
