@@ -5,4 +5,3 @@ function mnoshenya(a) {
 }
 
 console.log(mnoshenya(2)(5));
-mnoshenya(3)(5);
