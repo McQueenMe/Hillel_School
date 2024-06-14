@@ -3,7 +3,6 @@ let ladder = {
    up: function () {
       step += 1;
       return this
-      // підніматиме вас на одну сходинку
    },
    down: function () {
       step -= 1;
