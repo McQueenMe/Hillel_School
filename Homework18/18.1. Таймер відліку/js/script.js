@@ -1,4 +1,4 @@
-let allTheTime = 5;
+let allTheTime = 87;
 
 function formatTime(seconds) {
    let minutes = Math.floor(seconds / 60);
