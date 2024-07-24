@@ -21,3 +21,15 @@ function startTimer() {
 const timerInterval = setInterval(startTimer, 1000);
 
 startTimer();
+
+const promise1 = new Promise((resolve, reject) => {
+   setTimeout(() => {
+      console.log('in Promise')
+   }, 1000)
+})
+
+promise1().then(() => {
+   console.log('Yes')
+}).catch(() => {
+   console.log('error')
+})

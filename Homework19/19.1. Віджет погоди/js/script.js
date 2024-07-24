@@ -14,14 +14,7 @@ async function fetchWeather() {
 
 async function newCityReload() {
    city = prompt('Enter name of city');
-   try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=ua`);
-      const data = await response.json();
-      console.log(data);
-      displayWeather(data);
-   } catch (error) {
-      document.getElementById('weather').innerHTML = '<h2>Не вдалося отримати дані про погоду</h2>';
-   }
+   fetchWeather()
 }
 
 function displayWeather(data) {
