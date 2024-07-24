@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Віджет Погоди</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         background-color: #4a90e2;
+         color: white;
+         margin: 0;
+      }
+
+      .weather-widget {
+         background: #2a3c55;
+         padding: 20px;
+         border-radius: 10px;
+         text-align: center;
+         width: 300px;
+      }
+
+      .weather-widget h2,
+      .weather-widget p {
+         margin: 5px 0;
+      }
+
+      .weather-widget .temperature {
+         font-size: 3em;
+      }
+
+      .weather-widget .time {
+         font-size: 2em;
+      }
+
+      .weather-widget .icon {
+         width: 50px;
+      }
+
+      .weather-widget button {
+         margin-top: 10px;
+         padding: 10px 20px;
+         font-size: 1em;
+         cursor: pointer;
+         background-color: #4a90e2;
+         border: none;
+         color: white;
+         border-radius: 5px;
+      }
+
+      .weather-widget .refresh-icon {
+         cursor: pointer;
+         width: 20px;
+         vertical-align: middle;
+      }
+   </style>
+</head>
+
+<body>
+
+   <div class="weather-widget">
+      <div id="weather">
+         <h2>Завантаження...</h2>
+      </div>
+      <button onclick="fetchWeather()">Оновити дані</button>
+   </div>
+
+   <script src="js/script.js">
+   </script>
+
+</body>
+
+</html>
