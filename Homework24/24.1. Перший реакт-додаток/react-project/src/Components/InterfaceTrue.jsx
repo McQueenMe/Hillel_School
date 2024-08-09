@@ -1,7 +1,6 @@
 import React from "react";
 
 function InterfaceTrue() {
-   // Статические данные для демонстрации интерфейса
    const data = {
       name: "Luke Skywalker",
       birth_year: "19BBY",
