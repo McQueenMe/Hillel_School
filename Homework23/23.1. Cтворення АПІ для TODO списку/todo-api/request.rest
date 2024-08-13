@@ -1,0 +1,34 @@
+POST http://localhost:3000/createTask
+Content-Type: application/json
+
+{
+   "task": "Cook a dinner"
+}
+
+###
+
+GET http://localhost:3000/findTask
+Content-Type: application/json
+
+{
+   "task": "Cook a dinner"
+}
+
+###
+
+PUT http://localhost:3000/updateTask
+Content-Type: application/json
+
+{
+   "_id": "66bb2c6c0474021fcc183571",
+   "task": "Cook a gourmet dinner"
+}
+
+###
+
+DELETE http://localhost:3000/deleteTask
+Content-Type: application/json
+
+{
+   "_id": "66bb346b5b9a2208ac636ce6"
+}
