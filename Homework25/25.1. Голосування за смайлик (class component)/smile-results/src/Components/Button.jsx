@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Button = ({ smiles, setWinner }) => {
-   const handleResults = () => {
+class Button extends Component {
+   handleResults = () => {
       let maxVotes = 0;
       let winner = null;
 
-      smiles.forEach((smile) => {
+      this.props.smiles.forEach((smile) => {
          const count = parseInt(localStorage.getItem(smile.props.emoji), 10) || 0;
          if (count > maxVotes) {
             maxVotes = count;
@@ -13,27 +14,29 @@ const Button = ({ smiles, setWinner }) => {
          }
       });
 
-      setWinner({ emoji: winner, count: maxVotes });
+      this.props.setWinner({ emoji: winner, count: maxVotes });
    };
 
-   const clearResults = () => {
-      smiles.forEach((smile) => {
+   clearResults = () => {
+      this.props.smiles.forEach((smile) => {
          localStorage.removeItem(smile.props.emoji);
       });
-      setWinner(null);
+      this.props.setWinner(null);
       window.location.reload();
    };
 
-   return (
-      <div>
-         <button onClick={handleResults} className="btn btn-success">
-            Show Results
-         </button>
-         <button onClick={clearResults} className="btn btn-danger">
-            Очистити результати
-         </button>
-      </div>
-   );
-};
+   render() {
+      return (
+         <div>
+            <button onClick={this.handleResults} className="btn btn-success button-1">
+               Show Results
+            </button>
+            <button onClick={this.clearResults} className="btn btn-danger button-1">
+               Очистити результати
+            </button>
+         </div>
+      );
+   }
+}
 
 export default Button;

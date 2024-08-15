@@ -20,7 +20,7 @@ class Smile extends Component {
 
    render() {
       return (
-         <div className="card">
+         <div className="card-custom">
             <div className="emo" onClick={this.handleClick}>
                {this.props.emoji}
             </div>
