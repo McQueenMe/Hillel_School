@@ -1,0 +1,22 @@
+.card{
+   display: flex;
+   justify-content: center;
+}
+
+.emo{
+   font-size: 80px;
+}
+.count{
+   font-size: 30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 70px 0 0 20px;
+}
+
+.smiles-container {
+   display: flex;
+   justify-content: center;
+   flex-wrap: nowrap; 
+   gap: 20px;
+   overflow-x: auto; 
+   padding: 10px;
+ }
