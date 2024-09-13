@@ -13,5 +13,5 @@ const todoSlice = createSlice({
    }
 });
 
-export const { addTodo, clearTodo } = todoSlice.actions;  // Экшены для использования
+export const { addTodo, clearTodo } = todoSlice.actions;
 export default todoSlice.reducer;

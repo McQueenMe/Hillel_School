@@ -9,7 +9,7 @@ function TodoPage() {
    const todos = useSelector((state) => state.todos);
 
    useEffect(() => {
-      if (todos.length === 0) { // Загружаем только если список пуст
+      if (todos.length === 0) {
          const savedTodos = JSON.parse(localStorage.getItem('todos'));
          if (savedTodos) {
             savedTodos.forEach(todo => dispatch(addTodo(todo)));

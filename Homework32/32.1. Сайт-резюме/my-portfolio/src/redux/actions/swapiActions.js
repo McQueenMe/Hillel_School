@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { setData, setError, clearData as clearDataAction } from '../swapiSlice';  // Правильный импорт clearData
+import { setData, setError, clearData as clearDataAction } from '../swapiSlice';
 
 export const fetchData = (id) => async (dispatch) => {
    try {
@@ -10,7 +10,6 @@ export const fetchData = (id) => async (dispatch) => {
    }
 };
 
-// Если clearData используется напрямую в SwapiPage, просто переименуем его
 export const clearData = () => (dispatch) => {
-   dispatch(clearDataAction());  // Вызываем clearData из swapiSlice
+   dispatch(clearDataAction());
 };

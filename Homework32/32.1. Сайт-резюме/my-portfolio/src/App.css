@@ -12,8 +12,8 @@ html, body, #root {
 
 .content {
   flex: 1;
-  padding-bottom: 100px; /* Отступ для предотвращения перекрытия футером */
-  overflow-y: auto; /* Контент будет прокручиваться, если он длиннее страницы */
+  padding-bottom: 100px; 
+  overflow-y: auto; 
 }
 
 footer {
@@ -33,8 +33,8 @@ footer {
 }
 
 .todo-page {
-  min-height: calc(100vh - 120px); /* Высота экрана минус высота хедера и футера */
-  background-color: #8ED6EA; /* Голубой фон */
+  min-height: calc(100vh - 120px); 
+  background-color: #8ED6EA; 
   padding: 20px;
 }
 

@@ -22,5 +22,5 @@ const swapiSlice = createSlice({
    }
 });
 
-export const { setData, setError, clearData } = swapiSlice.actions;  // Экшены для использования
+export const { setData, setError, clearData } = swapiSlice.actions;
 export default swapiSlice.reducer;
