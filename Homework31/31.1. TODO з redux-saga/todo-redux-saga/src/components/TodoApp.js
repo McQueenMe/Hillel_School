@@ -1,4 +1,3 @@
-// src/components/TodoApp.js
 
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,7 +9,7 @@ const TodoApp = () => {
    const dispatch = useDispatch();
 
    useEffect(() => {
-      dispatch(loadTodos()); // Завантаження задач при завантаженні компонента
+      dispatch(loadTodos());
    }, [dispatch]);
 
    const handleAddTodo = () => {

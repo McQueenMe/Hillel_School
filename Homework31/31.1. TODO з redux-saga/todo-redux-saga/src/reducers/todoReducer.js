@@ -1,4 +1,3 @@
-// src/reducers/todoReducer.js
 
 import {
    ADD_TODO,
@@ -6,7 +5,7 @@ import {
    TOGGLE_TODO,
    EDIT_TODO,
    CLEAR_TODOS,
-   SET_TODOS,  // Додано SET_TODOS
+   SET_TODOS,
 } from "../actions/todoActions";
 
 const initialState = {
@@ -16,7 +15,7 @@ const initialState = {
 const todosReducer = (state = initialState, action) => {
    switch (action.type) {
       case SET_TODOS:
-         return { ...state, todos: action.todos };  // Обробка завантаження з LocalStorage
+         return { ...state, todos: action.todos };
       case ADD_TODO:
          return { ...state, todos: [...state.todos, action.todo] };
       case REMOVE_TODO:
