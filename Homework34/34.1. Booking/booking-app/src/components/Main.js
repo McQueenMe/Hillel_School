@@ -10,12 +10,10 @@ function Main() {
    const [destinations, setDestinations] = useState([]);
    const navigate = useNavigate();
 
-   // Получение данных направлений из JSON-сервера
    useEffect(() => {
       axios.get(`${process.env.REACT_APP_API_URL}/destination`).then((res) => setDestinations(res.data));
    }, []);
 
-   // Валидация формы
    const validate = (values) => {
       const errors = {};
       if (!values.destination) {
@@ -166,7 +164,6 @@ function Main() {
             )}
          />
 
-         {/* Добавление текста под формой */}
          <Box sx={{ mt: 5 }}>
             <Typography variant="h4" gutterBottom>
                Travel With

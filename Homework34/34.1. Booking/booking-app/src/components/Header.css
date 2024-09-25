@@ -1,4 +1,4 @@
-/* Убираем фон у хедера */
+
 .custom-header {
   background-color: transparent;
   padding: 20px;
@@ -8,7 +8,6 @@
   display: flex;
 }
 
-/* Левый блок с кругом и ссылкой Booking */
 .header-left {
   display: flex !important;
   align-items: center !important;
@@ -29,7 +28,6 @@
   font-weight: 800 !important;
 }
 
-/* Стиль для ссылок Home и About */
 .nav-link-right {
   font-size: 15px !important;
   font-weight: 700 !important;

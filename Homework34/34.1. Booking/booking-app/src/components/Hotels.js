@@ -20,7 +20,6 @@ const Hotels = () => {
             {hotels.map((hotel) => (
                <Col md={4} key={hotel.id} className="mb-4">
                   <Card>
-                     {/* Stretch the image across full width */}
                      <Card.Img variant="top" src="https://via.placeholder.com/140" className="w-100" style={{ objectFit: 'cover', height: '200px' }} />
                      <Card.Body>
                         <Card.Title>{hotel.name}</Card.Title>
